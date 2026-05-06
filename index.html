@@ -3,97 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wind Developers - Agreements</title>
+    <title>Agreements - Wind Developers Corporation</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background: #f4f7f6; }
-        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --tr-accent: #d32f2f;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
         .hidden { display: none; }
-        h1 { color: #2563eb; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; }
-        .tr-title { color: #d32f2f; border-color: #fee2e2; }
-        h2 { color: #1e40af; margin-top: 25px; }
-        .meta { background: #f8fafc; padding: 15px; border-radius: 6px; font-size: 0.9em; border-left: 4px solid #2563eb; margin-bottom: 20px; }
-        .tr-meta { background: #fff5f5; border-left-color: #d32f2f; }
-        .contact { background: #eff6ff; padding: 20px; border-radius: 8px; margin-top: 30px; border: 1px solid #dbeafe; }
-        a { color: #2563eb; text-decoration: none; font-weight: bold; }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .tr-header h1 { border-bottom-color: var(--tr-accent); }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 35px;
+            color: var(--primary-dark);
+        }
+
+        .tr-header h2 { color: var(--tr-accent); }
+
+        .meta {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .tr-meta { border-left-color: var(--tr-accent); background: #fff5f5; }
+
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+
+        .contact-section {
+            margin-top: 50px;
+            padding: 25px;
+            background: #f0f7ff;
+            border-radius: 12px;
+            border: 1px solid #dbeafe;
+        }
+
+        .tr-contact { background: #fef2f2; border-color: #fee2e2; }
+
+        a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+
+        .lang-status {
+            text-align: right;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            h1 { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <!-- ENGLISH CONTENT (Default) -->
-        <div id="en-content">
-            <h1>Wind Developers Corporation. – Terms of Use</h1>
-            <div class="meta">
-                <strong>Effective Date:</strong> January 21, 2026<br>
-                <strong>Time Zone:</strong> Europe / Istanbul
-            </div>
-            <p>This website, software, and all services offered by Wind Developer Inc. (“Services”) are subject to the Terms of Use set forth below.</p>
-            
-            <h2>1️⃣ Use of Services</h2>
-            <ul>
-                <li>Not to misuse the Services</li>
-                <li>Not to damage systems</li>
-                <li>Not to gain unauthorized access</li>
-            </ul>
-
-            <h2>2️⃣ Intellectual Property Rights</h2>
-            <p>All software, source code, and designs belong to Wind Developers Corporation. Contents cannot be copied or modified without permission.</p>
-
-            <div class="contact">
-                <h2>8️⃣ Contact</h2>
-                <p><strong>🛠 Support:</strong> <a href="mailto:supportwinddevs@gmail.com">supportwinddevs@gmail.com</a></p>
-            </div>
+<div class="container">
+    <!-- ENGLISH CONTENT -->
+    <div id="en-content">
+        <div class="lang-status">Language: English (Global)</div>
+        <h1>Wind Developers Corporation. – Terms of Use</h1>
+        
+        <div class="meta">
+            <strong>Effective Date:</strong> January 21, 2026<br>
+            <strong>Time Zone:</strong> Europe / Istanbul
         </div>
 
-        <!-- TÜRKÇE İÇERİK -->
-        <div id="tr-content" class="hidden">
-            <h1 class="tr-title">Wind Developers Corporation. – Kullanım Şartları</h1>
-            <div class="meta tr-meta">
-                <strong>Yürürlük Tarihi:</strong> 21 Ocak 2026<br>
-                <strong>Saat Dilimi:</strong> Avrupa / İstanbul
-            </div>
-            <p>Bu web sitesi ve Wind Developer Inc. tarafından sunulan tüm hizmetler aşağıda belirtilen Kullanım Şartları’na tabidir.</p>
-            
-            <h2>1️⃣ Hizmetlerin Kullanımı</h2>
-            <ul>
-                <li>Hizmetleri kötüye kullanmamayı</li>
-                <li>Sistemlere zarar vermemeyi</li>
-                <li>Yetkisiz erişim sağlamamayı kabul edersiniz.</li>
-            </ul>
+        <p>This website, software, and all services offered by Wind Developer Inc. (“Services”) are subject to the Terms of Use set forth below. Anyone using the site or services is deemed to have read, understood, and accepted these terms.</p>
 
-            <h2>2️⃣ Fikri Mülkiyet Hakları</h2>
-            <p>Tüm yazılımlar ve tasarımlar Wind Developers Corporation.’e aittir. İzinsiz kopyalanamaz veya dağıtılamaz.</p>
+        <h2>1️⃣ Use of Services</h2>
+        <p>All content offered by Wind Developer Corporation may only be used for lawful and permitted purposes. Users agree:</p>
+        <ul>
+            <li>Not to misuse the Services in any way.</li>
+            <li>Not to damage server infrastructure or network systems.</li>
+            <li>Not to attempt unauthorized access (hacking).</li>
+        </ul>
 
-            <div class="contact">
-                <h2>8️⃣ İletişim</h2>
-                <p><strong>🛠 Destek:</strong> <a href="mailto:supportwinddevs@gmail.com">supportwinddevs@gmail.com</a></p>
-            </div>
+        <h2>2️⃣ Intellectual Property Rights</h2>
+        <p>All software, source code, designs, logos, and digital content belong to Wind Developers Corporation. These contents:</p>
+        <ul>
+            <li>Cannot be copied, reproduced, or modified.</li>
+            <li>Cannot be distributed or used for unauthorized commercial purposes.</li>
+            <li>Reverse engineering of software is strictly prohibited.</li>
+        </ul>
+
+        <h2>3️⃣ User Responsibilities</h2>
+        <p>The user agrees to comply with international laws while using the services and not to share harmful, misleading, or illegal content.</p>
+
+        <h2>4️⃣ Changes to Services</h2>
+        <p>We reserve the right to temporarily or permanently change, update, or terminate the services offered without prior notice.</p>
+
+        <h2>5️⃣ Limitation of Liability</h2>
+        <p>Services are provided “as is”. Wind Developers Corporation does not guarantee that the services will be uninterrupted. No liability is accepted for data loss or hardware damages.</p>
+
+        <div class="contact-section">
+            <h2>8️⃣ Contact</h2>
+            <p>For questions regarding the Terms of Use:</p>
+            <p><strong>🛠 Support:</strong> <a href="mailto:supportwinddevs@gmail.com">supportwinddevs@gmail.com</a></p>
         </div>
     </div>
 
-    <script>
-        // URL kontrolü yapan fonksiyon
-        function checkRoute() {
-            const path = window.location.pathname;
-            const enBox = document.getElementById('en-content');
-            const trBox = document.getElementById('tr-content');
+    <!-- TÜRKÇE İÇERİK -->
+    <div id="tr-content" class="hidden tr-header">
+        <div class="lang-status">Dil: Türkçe (Yerel)</div>
+        <h1>Wind Developers Corporation. – Kullanım Şartları</h1>
+        
+        <div class="meta tr-meta">
+            <strong>Yürürlük Tarihi:</strong> 21 Ocak 2026<br>
+            <strong>Saat Dilimi:</strong> Avrupa / İstanbul
+        </div>
 
-            // Eğer URL içinde /tr/ geçiyorsa Türkçeyi göster
-            if (path.includes('/tr/')) {
-                enBox.classList.add('hidden');
-                trBox.classList.remove('hidden');
-                document.documentElement.lang = "tr";
-                document.title = "Kullanım Şartları - Wind Developers";
-            } else {
-                enBox.classList.remove('hidden');
-                trBox.classList.add('hidden');
-                document.documentElement.lang = "en";
-                document.title = "Terms of Use - Wind Developers";
-            }
+        <p>Bu web sitesi, yazılımlar ve Wind Developer Inc. tarafından sunulan tüm hizmetler (“Hizmetler”), aşağıda belirtilen Kullanım Şartları’na tabidir. Siteyi veya hizmetleri kullanan herkes bu şartları okumuş, anlamış ve kabul etmiş sayılır.</p>
+
+        <h2>1️⃣ Hizmetlerin Kullanımı</h2>
+        <p>Wind Developers Corporation tarafından sunulan tüm içerikler, yalnızca yasal amaçlarla kullanılabilir. Kullanıcılar şunları kabul eder:</p>
+        <ul>
+            <li>Hizmetleri hiçbir şekilde kötüye kullanmamayı,</li>
+            <li>Sistemlere, sunuculara veya ağ altyapısına zarar vermemeyi,</li>
+            <li>Yetkisiz erişim (hacking) girişiminde bulunmamayı.</li>
+        </ul>
+
+        <h2>2️⃣ Fikri Mülkiyet Hakları</h2>
+        <p>Sitede yer alan tüm yazılımlar, kaynak kodlar, tasarımlar ve logolar Wind Developers Corporation.’e aittir. Bu içerikler:</p>
+        <ul>
+            <li>İzinsiz kopyalanamaz, çoğaltılamaz ve değiştirilemez.</li>
+            <li>Ticari veya kişisel amaçla izinsiz dağıtılamaz.</li>
+            <li>Yazılımların tersine mühendislik ile incelenmesi yasaktır.</li>
+        </ul>
+
+        <h2>3️⃣ Kullanıcı Sorumlulukları</h2>
+        <p>Kullanıcı, hizmetleri kullanırken yürürlükteki yasalara uymayı, başkalarının haklarını ihlal etmemeyi ve yasa dışı içerik paylaşmamayı kabul eder.</p>
+
+        <h2>4️⃣ Hizmetlerde Değişiklik</h2>
+        <p>Wind Developers Corporation, sunulan hizmetleri önceden bildirim yapmaksızın değiştirme, güncelleme veya sonlandırma hakkını saklı tutar.</p>
+
+        <h2>5️⃣ Sorumluluğun Sınırlandırılması</h2>
+        <p>Sunulan hizmetler “olduğu gibi” sağlanmaktadır. Oluşabilecek veri kaybı, hizmet kesintisi veya donanımsal zararlardan dolayı şirketimiz sorumluluk kabul etmez.</p>
+
+        <div class="contact-section tr-contact">
+            <h2>8️⃣ İletişim</h2>
+            <p>Kullanım Şartları ile ilgili sorularınız için:</p>
+            <p><strong>🛠 Destek:</strong> <a href="mailto:supportwinddevs@gmail.com">supportwinddevs@gmail.com</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function route() {
+        const path = window.location.pathname;
+        const en = document.getElementById('en-content');
+        const tr = document.getElementById('tr-content');
+        
+        // URL'de /tr/ veya /tr/haklariniz veya /tr/kullanimsartlari geçiyorsa
+        if (path.includes('/tr/')) {
+            en.classList.add('hidden');
+            tr.classList.remove('hidden');
+            document.title = "Kullanım Şartları - Wind Developers";
+            document.documentElement.lang = "tr";
+        } else {
+            en.classList.remove('hidden');
+            tr.classList.add('hidden');
+            document.title = "Terms of Use - Wind Developers";
+            document.documentElement.lang = "en";
         }
+    }
 
-        // Sayfa yüklendiğinde çalıştır
-        window.onload = checkRoute;
-    </script>
+    // Yüklendiğinde ve URL değiştiğinde kontrol et
+    window.addEventListener('load', route);
+    window.addEventListener('popstate', route);
+</script>
+
 </body>
 </html>
