@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/tr/:path*", "destination": "/index.html" }
+    { "source": "/tr/sozlesme/:path*", "destination": "/index.html" }
   ]
 }
